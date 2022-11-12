@@ -1,0 +1,29 @@
+{
+  "name": "zip-pack-unpack",
+  "version": "0.0.1",
+  "description": "Simple zip unzip archiver",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "archiver": "~5.3.1",
+    "yauzl": "~2.10.0"
+  },
+  "files": [
+    "index.mjs"
+  ],
+  "keywords": [
+    "zip",
+    "unzip",
+    "pack",
+    "unpack",
+    "archiver"
+  ],
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=7.x"
+  },
+  "author": "Denis Baskovsky",
+  "license": "MIT"
+}

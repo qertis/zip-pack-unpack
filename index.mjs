@@ -1,6 +1,6 @@
-const archiver = require('archiver');
-const yauzl = require('yauzl');
-const { Writable } = require('stream');
+import archiver from 'archiver';
+import yauzl from 'yauzl';
+import { Writable } from 'stream';
 
 /**
  * @param {Array<object>} inputs - input

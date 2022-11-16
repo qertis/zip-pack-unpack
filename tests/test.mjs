@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { unpack, pack } from '../index.mjs';
+import { unpack, pack } from '../src/index.mjs';
 
 test('zip-tests', async (t) => {
   const testPack = await pack([

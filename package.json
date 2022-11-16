@@ -1,9 +1,11 @@
 {
   "name": "zip-pack-unpack",
   "version": "0.0.1",
-  "description": "Simple zip unzip archiver",
-  "main": "index.mjs",
+  "description": "Simple zip and unzip",
+  "main": "index.cjs",
+  "module": "index.mjs",
   "scripts": {
+    "build": "babel src/index.mjs -d dist --out-file-extension .cjs --minified",
     "test": "node tests/test.mjs"
   },
   "dependencies": {
@@ -11,8 +13,13 @@
     "yauzl": "~2.10.0"
   },
   "files": [
+    "dist",
     "index.mjs"
   ],
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  },
   "keywords": [
     "zip",
     "unzip",
@@ -21,9 +28,14 @@
     "archiver"
   ],
   "engines": {
-    "node": ">=16.x",
-    "npm": ">=7.x"
+    "node": ">=18.x",
+    "npm": ">=8.x"
   },
-  "author": "Denis Baskovsky",
-  "license": "MIT"
+  "author": "Denis Baskovsky (https://baskovsky.ru)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "~7.19.3",
+    "@babel/core": "~7.20.2",
+    "@babel/preset-env": "~7.20.2"
+  }
 }

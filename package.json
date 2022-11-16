@@ -1,6 +1,6 @@
 {
   "name": "zip-pack-unpack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple zip and unzip",
   "main": "dist/index.cjs",
   "module": "src/index.mjs",

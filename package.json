@@ -2,8 +2,8 @@
   "name": "zip-pack-unpack",
   "version": "0.0.2",
   "description": "Simple zip and unzip",
-  "main": "index.cjs",
-  "module": "index.mjs",
+  "main": "dist/index.cjs",
+  "module": "src/index.mjs",
   "scripts": {
     "build": "babel src/index.mjs -d dist --out-file-extension .cjs --minified",
     "test": "node tests/test.mjs"
@@ -13,12 +13,12 @@
     "yauzl": "~2.10.0"
   },
   "files": [
-    "dist",
-    "index.mjs"
+    "dist/index.cjs",
+    "src/index.mjs"
   ],
   "exports": {
-    "import": "./index.mjs",
-    "require": "./index.cjs"
+    "import": "./src/index.mjs",
+    "require": "./dist/index.cjs"
   },
   "keywords": [
     "zip",
